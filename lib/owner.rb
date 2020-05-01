@@ -51,6 +51,7 @@ class Owner
   def walk_dogs 
     Dog.all.each  do |dog| 
       dog.mood = "happy"
+      #binding.pry
     end
   end 
   
@@ -59,10 +60,10 @@ class Owner
   end 
   
   def sell_pets 
-   Cat.all.each { |cat| cat.mood = "nervous"}
-   Cat.all.each { |cat| cat.owner = nil}
-   Dog.all.each { |dog| dog.mood = "nervous"}
-   Dog.all.each { |dog| dog.owner = nil }
+    Cat.all.each { |cat| cat.mood = "nervous"}
+    Cat.all.each { |cat| cat.owner = nil}
+    Dog.all.each { |dog| dog.mood = "nervous"}
+    Dog.all.each { |dog| dog.owner = nil }
     
   end 
 
